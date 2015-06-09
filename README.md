@@ -1,2 +1,4 @@
 # mining-low-dim-network-data
-Material for my short course at the 5th PhD School on Traffic Monitoring and Analysis, Barcelona, May 21-22 2015
+Material for my short course at the 5th PhD School on Traffic Monitoring and Analysis, Barcelona, May 21-22 2015.
+
+The presentation and code are both contained in the ipython notebook.  The presentation can be viewed as a slideshow using [RISE (Live Reveal)](https://github.com/damianavila/RISE).  Or you can just view and run the notebook from ipython.
