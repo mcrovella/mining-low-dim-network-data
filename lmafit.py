@@ -28,9 +28,9 @@ def lmafit_mc_adp(m,n,k,Known,data,opts):
     objv = np.zeros(maxit)
     RR = np.ones(maxit)
     if iprint == 1:
-        print 'Iteration: '
+        print('Iteration: ')
     if iprint == 2:
-        print '\nLMafit_mc: \n'
+        print('\nLMafit_mc: \n')
 
     # initialize: make sure the correctness of the index set and data
     data[data==0]=np.spacing(1)
@@ -60,7 +60,7 @@ def lmafit_mc_adp(m,n,k,Known,data,opts):
     minitr_reduce_rank = 5
     maxitr_reduce_rank = 50
 
-    for iter in xrange(maxit):
+    for iter in range(maxit):
         itr_rank += 1
         Xo = X
         Yo = Y
@@ -97,9 +97,9 @@ def lmafit_mc_adp(m,n,k,Known,data,opts):
             alf = alf+increment;
     
         if iprint==1:
-            print '{}'.format(iter)
+            print('{}'.format(iter))
         if iprint==2:
-            print 'it: {} rk: (none), rel. {} r. {} chg: {} alf: {} inc: {}\n'.format(iter, k, relres,ratio,reschg,alf0x,increment)
+            print('it: {} rk: (none), rel. {} r. {} chg: {} alf: {} inc: {}\n'.format(iter, k, relres,ratio,reschg,alf0x,increment))
 
         objv[iter] = relres
 
@@ -110,7 +110,7 @@ def lmafit_mc_adp(m,n,k,Known,data,opts):
         Z[Known] = data + alf*Res
 
     if iprint == 1:
-        print '\n'
+        print('\n')
 
     if data_tran:
         tX = X
